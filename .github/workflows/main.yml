@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Test workflow
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  cargo-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: |
+          # Make sure Cargo.lock is up-to-date
+          cargo fetch --locked
+          cargo fetch --manifest-path external/excluded/Cargo.toml --locked
