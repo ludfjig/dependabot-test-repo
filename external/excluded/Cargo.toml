@@ -1,0 +1,7 @@
+[package]
+name = "excluded"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dependabot-tester = { path = "../../crates/dependabot-tester" }
