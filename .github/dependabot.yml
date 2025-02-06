@@ -6,6 +6,10 @@
 version: 2
 updates:
   - package-ecosystem: "cargo" # See documentation for possible values
-    directories: ["/", "/external/excluded/"] # Location of package manifests
+    directories: ["/"] # Location of package manifests
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "cargo" # See documentation for possible values
+    directories: ["/external/excluded/"] # Location of package manifests
     schedule:
       interval: "weekly"
