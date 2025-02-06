@@ -1,4 +1,4 @@
 pub fn bot() -> u64 {
-    wasmtime::Config::new();
-    5
+    let a = rustix::io::PIPE_BUF;
+    a as u64
 }
