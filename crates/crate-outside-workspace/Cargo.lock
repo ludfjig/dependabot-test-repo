@@ -237,12 +237,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "crate-in-workspace"
+version = "0.1.0"
+dependencies = [
+ "wasmtime",
+]
+
+[[package]]
 name = "crc32fast"
 version = "1.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a97769d94ddab943e4510d138150169a2758b5ef3eb191a9ee688de3e23ef7b3"
 dependencies = [
  "cfg-if",
+]
+
+[[package]]
+name = "create-outside-workspace"
+version = "0.1.0"
+dependencies = [
+ "crate-in-workspace",
 ]
 
 [[package]]
@@ -287,13 +301,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef552e6f588e446098f6ba40d89ac146c8c7b64aade83c051ee00bb5d2bc18d"
 dependencies = [
  "uuid",
-]
-
-[[package]]
-name = "dependabot-tester"
-version = "0.1.0"
-dependencies = [
- "wasmtime",
 ]
 
 [[package]]
@@ -368,13 +375,6 @@ checksum = "33d852cb9b869c2a9b3df2f71a3074817f01e1844f839a144f5fcef059a4eb5d"
 dependencies = [
  "libc",
  "windows-sys",
-]
-
-[[package]]
-name = "excluded"
-version = "0.1.0"
-dependencies = [
- "dependabot-tester",
 ]
 
 [[package]]

@@ -237,6 +237,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "crate-in-workspace"
+version = "0.1.0"
+dependencies = [
+ "wasmtime",
+]
+
+[[package]]
 name = "crc32fast"
 version = "1.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -287,13 +294,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef552e6f588e446098f6ba40d89ac146c8c7b64aade83c051ee00bb5d2bc18d"
 dependencies = [
  "uuid",
-]
-
-[[package]]
-name = "dependabot-tester"
-version = "0.1.0"
-dependencies = [
- "wasmtime",
 ]
 
 [[package]]

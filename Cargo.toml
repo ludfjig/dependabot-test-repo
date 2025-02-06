@@ -1,8 +1,8 @@
 [workspace]
 resolver = "2"
 members = [
-    "crates/dependabot-tester",
+    "crates/crate-in-workspace",
 ]
 exclude = [
-    "external/excluded",
+    "crates/crate-outside-workspace",
 ]
